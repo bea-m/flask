@@ -1,3 +1,8 @@
+Jak pracovat s Dockerem
+pip freeze > requirements.txt
+docker build -t test .
+docker run test -p
+docker exec -it [dockerid] bash
 Base Skeleton to start your application using Flask-AppBuilder
 --------------------------------------------------------------
 

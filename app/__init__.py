@@ -15,11 +15,11 @@ db = SQLA(app)
 appbuilder = AppBuilder(app, db.session)
 
 
-@event.listens_for(Engine, "connect")
+'''@event.listens_for(Engine, "connect")
 def set_sqlite_pragma(dbapi_connection, connection_record):
     cursor = dbapi_connection.cursor()
     cursor.execute("PRAGMA foreign_keys=ON")
     cursor.close()
-
+'''
 
 from . import models, views  # noqa
