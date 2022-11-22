@@ -26,5 +26,11 @@ Base Skeleton to start your application using Flask-AppBuilder
 
 	docker exec -it -e PGPASSWORD=hello_flask f0d80797840c 'pg_dump -U hello_flask hello_flask_dev' | gzip > zaloha$(date +%Y-%m-%d).sql.gz
 
+-nastartovani:
+
+	docker compose build
+	
+	docker compose up
+	
 
 That's it!!!
