@@ -22,7 +22,9 @@ Base Skeleton to start your application using Flask-AppBuilder
     # Run dev server
     $ flask run
 
-- Přesměrování: docker exec -it -e PGPASSWORD=hello_flask f0d80797840c 'pg_dump -U hello_flask hello_flask_dev' | gzip > zaloha$(date +%Y-%m-%d).sql.gz
+- Přesměrování: 
+
+	docker exec -it -e PGPASSWORD=hello_flask f0d80797840c 'pg_dump -U hello_flask hello_flask_dev' | gzip > zaloha$(date +%Y-%m-%d).sql.gz
 
 
 That's it!!!
